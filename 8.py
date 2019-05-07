@@ -1,8 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
 
 n = """73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
@@ -26,17 +22,11 @@ n = """73167176531330624919225119674426574742355349194934
 71636269561882670428252483600823257530420752963450"""
 
 
-# In[ ]:
-
-
 def prod(string):
     prod = 1
     for i in range(len(string)):
         prod = prod * int(string[i])
     return prod
-
-
-# In[ ]:
 
 
 def maxmulti(n, adj):
@@ -48,15 +38,9 @@ def maxmulti(n, adj):
         print cstring, cprod, maxprod
     return maxprod
 
-adj = 13
-
-n = n.replace("\n", "")
-print n
-print maxmulti(n, adj)
-
-
-# In[ ]:
-
-
-
+if __name__ == "__main__":
+    adj = 13
+    n = n.replace("\n", "")
+    print n
+    print maxmulti(n, adj)
 
